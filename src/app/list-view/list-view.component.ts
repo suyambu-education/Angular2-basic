@@ -15,7 +15,7 @@ export class ListViewComponent implements OnInit {
   constructor(private _httpData:Http,private jsonservice:JsonDataServiceService) { }
 
   ngOnInit() {
-    this.jsonservice.getAllJson()
+    this.jsonservice.getData()
         .subscribe(
           data => this.listValue=data,
           error => this.error=error.statusText

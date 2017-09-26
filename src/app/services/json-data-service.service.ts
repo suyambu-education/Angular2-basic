@@ -8,11 +8,15 @@ export class JsonDataServiceService {
 
   constructor( private _http:Http) { }
 
-  getAllJson(){
+  getData(){
     
         return this._http.get('jsondata/db.json')
                     .map(resp => resp.json());
     
       }
+  putData(a){
+    return this._http.post('jsondata/db.json',a);
+    
+  }
 
 }

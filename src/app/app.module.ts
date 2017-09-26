@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ListViewComponent } from './list-view/list-view.component';
 import {JsonDataServiceService} from './services/json-data-service.service';
+import { AddlistComponent } from './addlist/addlist.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ListViewComponent
+    ListViewComponent,
+    AddlistComponent
   ],
   imports: [
     BrowserModule,
